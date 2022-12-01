@@ -12,7 +12,7 @@ const fetchData = async () => {
   const response = await axios.get(URL, {
     headers,
   });
-  return response.data.response;
+  return response.data;
 };
 
 export default fetchData;
