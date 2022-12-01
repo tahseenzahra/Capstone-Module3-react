@@ -52,7 +52,7 @@ describe('Fetch World Data', () => {
       });
 
       const result = await fetchWorldData();
-api
+      api;
       expect(axios.get).toHaveBeenCalledWith(URL, { headers });
       expect(result).toEqual([]);
     });
