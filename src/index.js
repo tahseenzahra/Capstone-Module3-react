@@ -7,6 +7,7 @@ import App from './App';
 import store from './redux/configureStore';
 import reportWebVitals from './reportWebVitals';
 import Dashboard from './pages/Dashboard';
+import Details from './components/Details';
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Dashboard />,
+      },
+      {
+        path: 'continent/:name',
+        element: <Details />,
       },
     ],
   },

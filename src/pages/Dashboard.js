@@ -1,4 +1,3 @@
-/* eslint-disable */
 /* eslint-disable no-unused-expressions */
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
@@ -23,12 +22,12 @@ const Dashboard = () => {
 
   return (
     <div className="dashboard">
-      <ContinentCard continents={data} name='Africa' map={africaImg} />
-      <ContinentCard continents={data} name='Europe' map={europeImg} />
-      <ContinentCard continents={data} name='North-America' map={northImg} />
-      <ContinentCard continents={data} name='Oceania' map={oceaniaImg} />
-      <ContinentCard continents={data} name='Asia' map={asiaImg} />
-      <ContinentCard continents={data} name='South-America' map={southImg} />
+      <ContinentCard continents={data} name="Africa" map={africaImg} />
+      <ContinentCard continents={data} name="Europe" map={europeImg} />
+      <ContinentCard continents={data} name="North-America" map={northImg} />
+      <ContinentCard continents={data} name="Oceania" map={oceaniaImg} />
+      <ContinentCard continents={data} name="Asia" map={asiaImg} />
+      <ContinentCard continents={data} name="South-America" map={southImg} />
     </div>
   );
 };

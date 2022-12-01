@@ -24,7 +24,7 @@ const ContinentCard = ({ continents, name, map }) => {
         <span>Total Cases</span>
         <span style={{ fontSize: '1.2rem', fontWeight: 'bold' }}>{ TotalCases() }</span>
       </p>
-      <Link to="/" className="continent-btn">
+      <Link to={`/continent/${name}`} className="continent-btn">
         View Details
       </Link>
     </div>
