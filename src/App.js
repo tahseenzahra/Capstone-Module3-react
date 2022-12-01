@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <main>
+      <main style={{ marginTop: '7rem' }}>
         <Outlet />
       </main>
     </div>
