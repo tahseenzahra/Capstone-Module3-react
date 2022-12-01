@@ -15,7 +15,7 @@ describe('UI Tests', () => {
         <BrowserRouter>
           <Dashboard />
         </BrowserRouter>
-      </Provider>
+      </Provider>,
     );
 
     expect(tree).toMatchSnapshot();
@@ -45,7 +45,7 @@ describe('UI Tests', () => {
             map={africaImg}
           />
         </BrowserRouter>
-      </Provider>
+      </Provider>,
     );
 
     const img = screen.getByRole('img');
@@ -59,7 +59,7 @@ describe('UI Tests', () => {
         <BrowserRouter>
           <Details />
         </BrowserRouter>
-      </Provider>
+      </Provider>,
     );
 
     const img = screen.getByRole('img');
