@@ -53,17 +53,21 @@ const Details = () => {
         {lastItem && lastItem.cases.total}
       </p>
       <table className="detail-table">
-        <tr>
-          <th>Country</th>
-          <th>Total Cases</th>
-        </tr>
-        {continent
-          && continent.map((country) => (
-            <tr key={country.country}>
-              <td>{country.country}</td>
-              <td>{country.cases.total}</td>
-            </tr>
-          ))}
+        <thead>
+          <tr>
+            <th>Country</th>
+            <th>Total Cases</th>
+          </tr>
+        </thead>
+        <tbody>
+          {continent
+            && continent.map((country) => (
+              <tr key={country.country}>
+                <td>{country.country}</td>
+                <td>{country.cases.total}</td>
+              </tr>
+            ))}
+        </tbody>
       </table>
     </div>
   );

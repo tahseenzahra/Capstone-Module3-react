@@ -24,7 +24,6 @@ describe('Fetch Data', () => {
     });
 
     const result = await fetchData();
-    console.log(result);
 
     expect(axios.get).toHaveBeenCalledWith(URL, { headers });
     expect(result[0].cases.total).toEqual(103955);
