@@ -6,7 +6,7 @@ const initialState = [];
 
 export const getAllData = createAsyncThunk(FETCH_WORLD_DATA, async () => {
   const data = await fetchData();
-  return data;
+  return data.response;
 });
 
 const worldReducer = createSlice({
