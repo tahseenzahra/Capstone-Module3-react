@@ -7,7 +7,7 @@ const ContinentCard = ({ continents, name, map }) => {
   const TotalCases = () => {
     if (continents.length) {
       const continent = continents.filter((country) => country.continent === name);
-      const lastItem = continent[continent.length - 1];
+      const lastItem = continent.find((country) => country.country === name);
       return lastItem.cases.total;
     }
     return 0;

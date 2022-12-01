@@ -15,7 +15,7 @@ const Details = () => {
   const dispatch = useDispatch();
 
   const continent = data?.filter((country) => country.continent === name);
-  const lastItem = continent[continent.length - 1];
+  const lastItem = continent.find((country) => country.country === name);
 
   const selectImg = () => {
     let img;
