@@ -36,6 +36,12 @@ div.continent-card {
   text-align: center;
   font-size: 1rem;
   border-radius: 10px;
+  background-color: transparent;
+  transition: all ease-out 0.5s;
+}
+
+div.continent-card:hover {
+  background-color: rgba(77, 36, 36, 0.331);
 }
 
 div.continent-img {
@@ -79,4 +85,39 @@ a.continent-btn {
 
 a.continent-btn:hover {
   background-color: rgb(108, 18, 36);
+}
+
+div.continent-map {
+  text-align: center;
+}
+
+div.continent-map img {
+  width: 20rem;
+}
+
+h3.detail-name {
+  text-align: center;
+  font-size: 2.3rem;
+  text-transform: uppercase;
+}
+
+p.detail-total {
+  text-align: center;
+  font-size: 1.5rem;
+  background-color: gray;
+  padding: 0.5rem;
+}
+
+table.detail-table {
+  width: 95%;
+  margin: 2rem auto;
+}
+
+table.detail-table th,
+table.detail-table tr,
+table.detail-table td {
+  border: 1px solid #fff;
+  text-align: left;
+  padding: 1rem;
+  font-size: 1.3rem;
 }

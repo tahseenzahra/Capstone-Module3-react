@@ -6,10 +6,9 @@ import PropTypes from 'prop-types';
 const ContinentCard = ({ continents, name, map }) => {
   const TotalCases = () => {
     if (continents.length) {
-      return continents.filter((country) => country.continent === name).reduce((acc, curr) => {
-        acc += curr.cases.total;
-        return acc;
-      }, 0);
+      const continent = continents.filter((country) => country.continent === name);
+      const lastItem = continent[continent.length - 1];
+      return lastItem.cases.total;
     }
     return 0;
   };
