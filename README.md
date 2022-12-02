@@ -27,6 +27,13 @@
 
 **COVID Tracker** is a web app that tracks COVID-19 cases worldwide. It uses the COVID-19 API from RapidAPI
 
+## 📷 [Screenshots]
+
+<div>
+  <img src="./screenshots/covid.png" />
+  <img src="./screenshots/covidetails.png" />
+</div>
+
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
